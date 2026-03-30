@@ -7,15 +7,15 @@ message Problem {
 }
 
 message Assignment {
-  required int32 robot_id = 1;
-  required int32 start_id = 2;
-  required int32 finish_id = 3;
+  int32 robot_id = 1;
+  int32 start_id = 2;
+  int32 finish_id = 3;
 }
 
 message Node {
-  required int32 id = 1;
-  required sint32 x = 2;
-  required sint32 y = 3;
+  int32 id = 1;
+  sint32 x = 2;
+  sint32 y = 3;
   repeated int32 neighbors = 4;
 }
 
