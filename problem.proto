@@ -1,0 +1,18 @@
+message Problem {
+  repeated Node Nodes = 2;
+  repeated Assignment assignments = 3;
+}
+
+message Assignment {
+  int32 robot_id = 1;
+  int32 start_id = 2;
+  int32 finish_id = 3;
+}
+
+message Node {
+  int32 id = 1;
+  sint32 x = 2;
+  sint32 y = 3;
+  repeated int32 neighbors = 4;
+}
+
