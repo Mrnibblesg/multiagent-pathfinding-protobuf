@@ -1,8 +1,12 @@
 package graph_solver;
 
+option java_multiple_files = true;
+option java_package = "projects.multipath.protos";
+option java_outer_classname = "GraphSolverProtos";
+
 message Problem {
-  repeated Node Nodes = 2;
-  repeated Assignment assignments = 3;
+  repeated Node Nodes = 1;
+  repeated Assignment assignments = 2;
 }
 
 message Assignment {
