@@ -4,7 +4,7 @@ option java_multiple_files = true;
 option java_package = "projects.multipath.protos";
 option java_outer_classname = "GraphSolverProtos";
 
-message Problem {
+message Instance {
   repeated Node nodes = 1;
   repeated Assignment assignments = 2;
 }
