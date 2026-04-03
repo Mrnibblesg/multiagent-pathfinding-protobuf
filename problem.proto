@@ -17,8 +17,6 @@ message Assignment {
 
 message Node {
   required int32 id = 1;
-  required sint32 x = 2;
-  required sint32 y = 3;
-  repeated int32 neighbors = 4;
+  repeated int32 neighbors = 2;
 }
 
