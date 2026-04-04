@@ -20,3 +20,17 @@ message Node {
   repeated int32 neighbors = 2;
 }
 
+message Solution {
+  required int32 status = 1;
+  repeated Timestep timesteps = 2;
+}
+
+message Timestep {
+  required int32 time = 1;
+  repeated Position positions = 2;
+}
+
+message Position {
+  required int32 robot_id = 1;
+  required int32 node_id = 2;
+}
